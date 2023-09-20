@@ -1,0 +1,46 @@
+%btn {
+    border-radius: 30px;
+    display: inline-block; //By była możliwość ustawiania maginesów
+    padding: 15px 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    color: #fff;
+}
+
+
+/*Dziedziczenie właściwości: @extend pozwala na dziedziczenie właściwości z istniejących reguł CSS. 
+Można stworzyć nową regułę CSS, która "rozszerza" lub "dziedziczy" właściwości z innej reguły, 
+co eliminuje potrzebę powtarzania tych samych właściwości w kodzie.*/
+
+.btn-primary {
+    @extend %btn;
+    background-color: $primary-color;
+
+
+    &:hover {
+        background-color: $button-color;
+    }
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $button-color;
+
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.btn-form {
+    @extend %btn;
+    background-color: #fff;
+    color: $secondary-color;
+    font-weight: 700;
+
+    &:hover {
+        background-color: $button-color;
+        color: #fff;
+    }
+}

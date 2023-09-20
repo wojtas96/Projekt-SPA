@@ -1,0 +1,46 @@
+input,
+textarea,
+select {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    background-color: $primary-color;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+
+
+    // &::-webkit-input-placeholder dotyczy przeglądarek opartych na silniku WebKit, takich jak Google Chrome, Opera i Safari.
+    &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #fff;
+    }
+
+    // &::-moz-placeholder dotyczy przeglądarek Firefox w wersji 19 i nowszych. 
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+    }
+
+    // &:-ms-input-placeholder dotyczy przeglądarki Internet Explorer w wersji 10 i nowszych. 
+    &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #fff;
+    }
+
+    // &:-moz-placeholder dotyczy przeglądarek Firefox w wersjach 18 i wcześniejszych. 
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+    }
+
+    &.error {
+        border-bottom: 1px solid #f00;
+    }
+}
+
+textarea {
+    height: 100px;
+}

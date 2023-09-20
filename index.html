@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project SPA</title>
+
+
+    <!-- Ten załącznik ustanawia preconnect do serwera, który hostuje czcionki Google Fonts. 
+        'Preconnect' pomaga przyspieszyć ładowanie zasobów poprzez nawiązanie wstępnego połączenia z serwerem, 
+        zanim przeglądarka faktycznie pobierze zasoby czcionek. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Atrybut 'crossorigin' wskazuje, że przeglądarka może pobierać zasoby z innego źródła 
+        (czyli serwera Google Fonts) w sposób zgodny z zasadami samego serwera. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Main container, struktura menu, ta sekcja - 'nav' definiuje główną nawigację strony, 
+        zawiera odnośnik do logo (brand) oraz ikonę mobilnego hamburgera (menu "trzech kresek") -->
+    <nav class="main-nav">
+        <div class="container">
+            <!-- main-nav-holder pomaga wszystko prawidłowo ułożyć -->
+            <div class="main-nav-holder">
+                <!-- Odnośnik poniżej -->
+                <a href="" class="brand"><img src="img/logo-txt.png" alt=""></a>
+
+                <!-- Element, który będzie mobilnym hamburgerem - czyli rozwijane menu "trzech kresek" -->
+                <div class="mobile-hamburger"><i class="fa-solid fa-bars" style="color: #1ba4ce;"></i></div>
+                <div class="open-menu-holder">
+                    <!-- Ikonka zamykania -->
+                    <div class="mobile-close"><i class="fa-regular fa-circle-xmark" style="color: #ffffff;"></i></div>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="">Home</a></li>
+                        <li class="menu-item"><a href="">About</a></li>
+                        <li class="menu-item"><a href="">Feature</a></li>
+                        <li class="menu-item"><a href="">Service</a></li>
+                        <li class="menu-item"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Główna treść nagłówkowa, zaw. treść powitalną, zaw. logo, tytuł strony, opis, itp. -->
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header-holder">
+                <p class="header-description">Spa & Beauty Center</p>
+                <h1>Beauty and success starts here</h1>
+                <p class="main-header-content">Together creeping heaven upon tired dominion be upon won't darkness rule
+                    behold it created good saw after she'd Our set living.</p>
+                <div class="buttons-panel">
+                    <!-- Poniższy kod: &#8594; - to symbol strzałki -->
+                    <button class="reserve">Reserve now &#8594;</button>
+                    <a href="" class="watch"><i class="fa-solid fa-play"></i>Watch out story</a>
+                </div>
+            </div>
+        </div>
+
+        <img src="img/header-flowers.png" alt="Flowers" class="header-flowers">
+        <img src="img/header-bg.png" alt="Header Background" class="header-bg">
+    </header>
+
+
+    <!-- Ta sekcja zaw. informacje o SPA -->
+    <section id="about" class="about">
+        <!-- <div> to znacznik służący do grupowania elementów w jednym kontenerze.
+        Klasa "container" jest często używana w projektach webowych do tworzenia kontenerów, 
+        które ograniczają szerokość zawartości i pomagają w zarządzaniu układem strony. -->
+        <div class="container">
+            <!-- <header> to znacznik używany do definiowania nagłówka sekcji. W tym przypadku, jest to nagłówek sekcji "about".
+            Klasa "about-header" może być używana do stylizacji elementów wewnątrz tego nagłówka. -->
+            <header class="about-header">
+                <img src="img/logo.png" alt="Logo">
+                <!-- Atrybut 'alt' zawiera tekst alternatywny, który jest wyświetlany, jeśli obrazek nie może być wyświetlony 
+                lub jest czytany przez czytniki ekranowe. -->
+                <p class="about-header-description">About our SPA Center</p>
+                <h2>Come and you will be Inspired!</h2>
+            </header>
+            <p class="about-content">It’s the end of summer the sweltering heat makes human sweat in the night and makes
+                the plants and trees wilt even in the
+                moonlit nights. The eastern wind breeze brings an eerie feeling, that the monsoon clouds are soon
+                coming, there is a
+                strange silence in the ears, the sky gets darker and darker.</p>
+            <!-- Atrybut href jest pusty (""), co oznacza, że odnośnik nie ma docelowego adresu URL. -->
+            <a href="" class="btn-primary">Read more</a>
+        </div>
+    </section>
+
+
+    <!-- Sekcja z usługami -->
+    <section id="services" class="services">
+        <div class="row">
+            <a href="" class="service col col-md-50p col-lg-25p">
+                <img src="img/services-bg-1.jpg" alt="Service 1">
+                <div class="service-overlay">
+                    <img src="img/icons/icon-spa.png" alt="Icon spa">
+                    <h3>Body treatment</h3>
+                </div>
+            </a>
+            <a href="" class="service col col-md-50p col-lg-25p">
+                <img src="img/services-bg-2.jpg" alt="Service 2">
+                <div class="service-overlay">
+                    <img src="img/icons/icon-spa.png" alt="Icon spa">
+                    <h3>Body treatment</h3>
+                </div>
+            </a>
+            <a href="" class="service col col-md-50p col-lg-25p">
+                <img src="img/services-bg-3.jpg" alt="Service 3">
+                <div class="service-overlay">
+                    <img src="img/icons/icon-spa.png" alt="Icon spa">
+                    <h3>Body treatment</h3>
+                </div>
+            </a>
+            <a href="" class="service col col-md-50p col-lg-25p">
+                <img src="img/services-bg-4.jpg" alt="Service 4">
+                <div class="service-overlay">
+                    <img src="img/icons/icon-spa.png" alt="Icon spa">
+                    <h3>Body treatment</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Sekcja z popularnymi usługami w SPA -->
+    <section id="procedures" class="procedures">
+        <div class="container">
+            <header class="section-header">
+                <h2>Popular Procedures</h2>
+                <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second
+                    every wherein were meat kind wherein and martcin.</p>
+            </header>
+
+            <div class="row">
+                <div class="infobox col col-md-33p">
+                    <div class="infobox-inner">
+                        <img src="img/procedures-bg-1.jpg" alt="Procedure 1">
+                        <h3>Message Therapy</h3>
+                        <p>Living winged said you darkness you're
+                            divide gathered and bring one seasons
+                            face great dr Waters firmament place</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+
+                <div class="infobox col col-md-33p">
+                    <div class="infobox-inner">
+                        <img src="img/procedures-bg-2.jpg" alt="Procedure 2">
+                        <h3>Message Therapy</h3>
+                        <p>Living winged said you darkness you're
+                            divide gathered and bring one seasons
+                            face great dr Waters firmament place</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+
+                <div class="infobox col col-md-33p">
+                    <div class="infobox-inner">
+                        <img src="img/procedures-bg-3.jpg" alt="Procedure 3">
+                        <h3>Message Therapy</h3>
+                        <p>Living winged said you darkness you're
+                            divide gathered and bring one seasons
+                            face great dr Waters firmament place</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sekcja zaw. informacje o zespole SPA + kontakt do team'u, social media -->
+    <section id="team" class="team">
+        <div class="container">
+            <header class="section-header">
+                <h2>Experienced Team</h2>
+                <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second
+                    every wherein were meat kind wherein and martcin</p>
+            </header>
+
+            <div class="row">
+                <div class="infobox-team col col-md-33p">
+                    <img src="img/team-1.jpg" alt="Team member 1">
+                    <div class="infobox-team-caption">
+                        <h3>Jenny Austin</h3>
+                        <p>Thai Massage</p>
+                        <div class="team-social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infobox-team col col-md-33p">
+                    <img src="img/team-2.jpg" alt="Team member 2">
+                    <div class="infobox-team-caption">
+                        <h3>Jenny Austin</h3>
+                        <p>Thai Massage</p>
+                        <div class="team-social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infobox-team col col-md-33p">
+                    <img src="img/team-3.jpg" alt="Team member 3">
+                    <div class="infobox-team-caption">
+                        <h3>Jenny Austin</h3>
+                        <p>Thai Massage</p>
+                        <!-- Ikony social media -->
+                        <div class="team-social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Formularz do rezerwacji -->
+    <section id="appointment" class="appointment">
+        <div class="desktop-background" style="background-image: url(img/contact-bg.jpg);"></div>
+
+        <form id="appointment-form">
+            <input type="text" name="name" placeholder="Name" id="appointment-name" class="form-field">
+
+            <input type="email" name="email" placeholder="Email" id="appointment-email" class="form-field">
+
+            <select name="service" id="appointment-service" class="form-field">
+                <!-- Lista rozwijana do wyboru w formularzu -->
+                <option value="">Select service</option>
+                <option value="normal">Normal Service</option>
+                <option value="vip">VIP Service</option>
+            </select>
+
+            <input type="tel" name="phone" placeholder="Phone" id="appointment-phone" class="form-field">
+
+            <!-- : - skrót do type, czyli input:type=input type="date" -->
+            <input type="date" name="date" id="appointment-date" class="form-field">
+            <input type="time" name="time" id="appointment-time" class="form-field">
+
+            <textarea name="message" id="appointment-message" placeholder="Your notes" class="form-field"></textarea>
+            <button type="submit" class="btn-form">Make an Appointment</button>
+            <p class="appointment-message"></p>
+        </form>
+    </section>
+
+
+    <!-- Sekcja z najnowszymi wpisami z bloga -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <header class="section-header">
+                <h2>Latest From blog</h2>
+                <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every
+                    wherein were meat kind wherein and martcin</p>
+            </header>
+
+            <div class="row">
+                <div class="infobox col col-md-33p">
+                    <div class="infobox-inner">
+                        <img src="img/blog-1.jpg" alt="Blog 1">
+                        <p class="meta"><a href="" class="category">Relaxation</a>|<a href="" class="post-date">july 03,
+                                2019</a></p>
+                        <h3>Had seed herb grass mids</h3>
+                        <p>She'd yielding seas green appear unto worne seas field most come mede do bad</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+
+                <div class="infobox col col-md-33p">
+                    <div class="infobox-inner">
+                        <img src="img/blog-2.jpg" alt="Blog 2">
+                        <p class="meta"><a href="" class="category">Relaxation</a>|<a href="" class="post-date">july 03,
+                                2019</a></p>
+                        <h3>Divid image unto creeping</h3>
+                        <p>She'd yielding seas green appear unto worne seas field most come mede do bad</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+
+                <div class="infobox col col-md-33p">
+                    <div class="infobox-inner">
+                        <img src="img/blog-3.jpg" alt="Blog 3">
+                        <p class="meta"><a href="" class="category">Relaxation</a>|<a href="" class="post-date">july 03,
+                                2019</a></p>
+                        <h3>Had seed herb grass mids</h3>
+                        <p>She'd yielding seas green appear unto worne seas field most come mede do bad</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sekcja zaw. dane kontaktowe i formularz kontaktowy -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <header class="section-header">
+                <h2>Get In Touch</h2>
+                <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every
+                    wherein were meat kind wherein and martcin</p>
+            </header>
+
+            <div class="row">
+                <div class="contact-data col col-md-33p">
+                    <div class="contact-item">
+                        <span class="img-holder">
+                            <img src="img/icons/icon-map.png" alt="map">
+                        </span>
+                        <p>848 E 28th ST, BROOKLYN <br> NEW YORK, USA </p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="img-holder">
+                            <img src="img/icons/icon-mail.png" alt="mail">
+                        </span>
+                        <p>
+                            <a href="mailto:example@example.pl">example@example.pl</a><br>
+                            <a href="mailto:example@example.pl">example@example.pl</a>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="img-holder">
+                            <img src="img/icons/icon-tel.png" alt="phone">
+                        </span>
+                        <p>
+                            <span>+02 365 2365 3265 (02)</span><br>
+                            <span>+01 365 2365 3265 (04)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-form col col-md-66p">
+                    <form>
+                        <input type="text" placeholder="First name" name="name">
+                        <input type="email" placeholder="Email address" name="email">
+                        <textarea name="" placeholder="Write message"></textarea>
+                        <button class="btn-form">Submit now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stopka strony internetowej -->
+    <footer class="page-footer">
+        <img src="img/logo-txt.png" alt="Logo">
+
+        <!-- Dodatkowe menu w stopce -->
+        <nav class="footer-nav">
+            <ul class="menu">
+                <li class="menu-item"><a href="">Home</a></li>
+                <li class="menu-item"><a href="">About</a></li>
+                <li class="menu-item"><a href="">Feature</a></li>
+                <li class="menu-item"><a href="">Service</a></li>
+                <li class="menu-item"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <p class="copy">© COPYRIGHT 2023</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

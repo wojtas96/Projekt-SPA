@@ -1,0 +1,63 @@
+.appointment {
+    padding: 0;
+    @include flexbox;
+
+    .desktop-background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 40%;
+        display: none;
+    }
+
+
+    form {
+        width: 100%;
+        background-color: $primary-color;
+        padding: 80px 40px;
+
+        .appointment-message {
+            width: 100%;
+            display: none;
+
+            &:error {
+                color: #f00;
+                display: block;
+            }
+
+            &.send {
+                color: #fff;
+                display: block;
+            }
+        }
+    }
+
+    @media all and (min-width: $large) {
+
+        .desktop-background {
+            display: block;
+        }
+
+        form {
+            width: 60%;
+            padding: 80px;
+            @include flexbox;
+            justify-content: space-between;
+
+            input,
+            select {
+                width: 49%;
+            }
+
+            textarea {
+                margin: 60px 0;
+            }
+        }
+    }
+}
+
+/*@include: Jest to dyrektywa w Sass/SCSS używana do wstawiania reguł CSS zdefiniowanych w miksinach do kodu CSS.
+flexbox: To nazwa miksu, która wskazuje, że chcemy wstawić reguły CSS zdefiniowane w miksinie o nazwie "flexbox".
+W praktyce, jeśli gdzieś w arkuszu stylów Sass/SCSS jest zdefiniowany miksin o nazwie "flexbox" zawierający reguły CSS 
+związane z układem opartym na flexboxie (flexbox layout), to używając @include flexbox;, te reguły zostaną wstawione w to miejsce. 
+Dzięki temu można użyć tych reguł wielokrotnie w różnych miejscach kodu bez powtarzania się.
