@@ -499,6 +499,7 @@ section .section-header p {
   width: 40px;
   text-align: center;
   line-height: 40px;
+  margin-right: 10px;
   border: 1px solid #473452;
   border-radius: 50%;
   transition: all .3s;
